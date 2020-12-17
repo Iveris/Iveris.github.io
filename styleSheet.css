@@ -1,0 +1,222 @@
+/* Constants */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.yellowG{ background: repeating-linear-gradient(-45deg, #ECEFA9, #ECEFA9 2px, #E3E4A0 2px, #E3E4A0 3px); }
+
+.skyBlueG{ background: repeating-linear-gradient(45deg, #BDD5EA, #BDD5EA 2px, #D0E1F0 4px, #D0E1F0 4px);}
+
+.medBlueG{ background: repeating-linear-gradient(0deg, #577399, #577399 2px, #577399 1px, #647FA6 4px);}
+
+.darkBlueG{ background: repeating-linear-gradient(180deg, #495867, #495867 2px, #577399 1px, #577399 4px);}
+
+section {
+    justify-content: center;
+    display: flex;
+    max-width: 100%;
+    min-height: 568px;
+}
+
+.row{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rowReverse{
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+.textLeft {
+    text-align: left;
+    margin-left: 2em;
+}
+.textRight{
+    text-align: right;
+    margin-right: 2em;
+}
+
+.col{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3em;
+    min-width: 320px;
+}
+
+.col.fullWidth{
+    min-width: 100%;
+}
+
+/* Splash */
+/* Landing display works ok from 468px wide and up */
+.splash{
+    width: 100%;
+    color:#495867;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.splash h1{
+    position: absolute;
+    bottom: 2.4rem;
+    right: 4rem;
+    font-size: 400%;
+}
+
+.splash h3{
+    position: absolute;
+    bottom: 1rem;
+    right: 4rem;
+    font-size: 150%;
+    font-weight: 400;
+}
+
+#headshot{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* navbar */
+.whereTo {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding-left: 4rem; 
+    padding-right: 4rem;
+}
+
+.whereTo a{
+    color: #495867;
+    text-decoration: none;
+}
+
+.whereTo a:hover{
+    color: #ECEFA9;
+}
+
+.rowContainer{
+    display:flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 2rem;
+}
+.colText {
+    flex: 2;
+    width: 45%;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.colImg{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/* Lessons */
+#lessonsRow{
+    color: #BDD5EA;
+}
+
+#lessonsCol1 a{
+    color:#ECEFA9;
+    text-decoration: none;
+}
+
+#lessonsCol1 a:hover{
+    color: whitesmoke;
+}
+
+
+#lessonsCol2 img{
+    max-height: 600px;
+    border-radius: 100%;
+}
+
+/* guitar4Kids */
+#g4k span{
+    font-weight: 600;
+    font-size: 3rem;
+}
+#g4k{
+    text-align: center;
+}
+
+.g4kids p {
+    padding-top: 1em;
+    color: #495867
+}
+
+/* Testimonials */
+.testimonials.col.fullWidth{
+    font-size: 1.15rem;
+}
+.testimonials.col.fullWidth h2{
+    text-align: center;
+    color: #495867;
+    font-weight: 400;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.col.colImg.testimonials.studentPix{
+    justify-content: flex-start;
+}
+
+.testimonials.studentPix img{
+    max-width: 30vw;
+    max-height: 30vh;
+}
+
+/* About */
+.about.rowContainer{
+    justify-content: space-evenly;
+}
+
+.about.colText{
+    color: #BDD5EA;
+}
+
+.about.colImg.contain img{
+    border-radius: 100%;
+    object-fit:contain;
+    max-height: 508px;
+    width:auto; 
+}
+
+
+/* Media */
+.media {
+    min-width: 49.8%;
+    object-fit: contain;
+    align-items: center;
+    color: #BDD5EA;
+}
+
+iframe{
+    width: 56.0vh;
+    height: 31.5vh;
+}
+
+/* Gallery */
+
+/* Press Kit */
+
+footer{
+    text-align: center;
+    color:#ECEFA9;
+}
