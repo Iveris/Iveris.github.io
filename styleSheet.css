@@ -1,4 +1,7 @@
-/* Constants */
+/*****************************************************************************************
+    CONSTANTS
+*****************************************************************************************/
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +12,7 @@
 body{
     background-color: black;
 }
+
 .yellowG{ background: repeating-linear-gradient(-45deg, #ECEFA9, #ECEFA9 2px, #E3E4A0 2px, #E3E4A0 3px); }
 
 .skyBlueG{ background: repeating-linear-gradient(45deg, #BDD5EA, #BDD5EA 2px, #D0E1F0 4px, #D0E1F0 4px);}
@@ -55,8 +59,51 @@ section {
     min-width: 100%;
 }
 
-/* Splash */
-/* Landing display works ok from 468px wide and up */
+.rowContainer{
+    display:flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 2rem;
+}
+.colText {
+    flex: 2;
+    width: 45%;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.colImg{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    justify-content: center;
+}
+
+@media(max-width: 1000px){
+    .textLeft {
+        margin-left: 0em;
+        text-align: center;
+    }
+    .textRight{
+        margin-right: 0em;
+        text-align: center;
+    }
+    
+    .col{
+        width: 100%;
+        padding: 0.75em;
+    }
+
+    .rowContainer{
+        padding: 1rem;
+    }
+}
+
+/*****************************************************************************************
+      SPLASH
+*****************************************************************************************/
 .splash{
     width: 100%;
     color:#495867;
@@ -85,9 +132,97 @@ section {
     display: block;
 }
 
+@media(max-width: 600px){
+    .splash h1{
+        font-size: 200%;
+        bottom: 1.2rem;
+        right: 1rem;
+    }
 
-/* navbar */
-.whereTo {
+    .splash h3{
+        font-size: 75%;
+        bottom: 0.5rem;
+        right: 1rem;
+    }
+}
+
+
+/*****************************************************************************************
+      NAVICON
+*****************************************************************************************/
+
+.navIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 4rem; 
+    padding-right: 4rem;
+}
+
+.whereTo{
+    position: fixed;
+    top: 2.75rem;
+    right: 1rem;
+    display:none;
+    width: fit-content;
+}
+
+.whereTo ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.whereTo ul li{
+    list-style: none;
+}
+
+.whereTo ul li a{
+    color: #ECEFA9;
+    text-decoration: none;
+    text-align: right;
+    padding: 0.5rem 0rem;
+    display: block;
+    font-size: large;
+    text-shadow: 0.75px 0.75px 0.75px gray;
+}
+
+.whereTo a:hover{
+    color: white;
+}
+
+.whereTo.active{
+    display:flex;
+}
+.toggleBtn{
+    position: fixed;
+    top: .75rem;
+    right: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toggleBtn svg{
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    opacity: 0.5;
+}
+
+@media(max-width: 750px) {
+    .toggleBtn svg{
+        width: 4rem;
+        height: 2rem;
+    }
+}
+
+/*****************************************************************************************
+      NAVBAR
+*****************************************************************************************/
+
+.navLinks {
     display: flex;
     justify-content: space-between;
     align-content: flex-end;
@@ -95,39 +230,26 @@ section {
     padding-right: 4rem;
 }
 
-.whereTo a{
+.navLinks a{
     color: #495867;
     text-decoration: none;
 }
 
-.whereTo a:hover{
+.navLinks a:hover{
     color: #ECEFA9;
 }
 
-.rowContainer{
-    display:flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    padding: 2rem;
-}
-.colText {
-    flex: 2;
-    width: 45%;
-    text-align: justify;
-    font-weight: 400;
-    font-size: 1.25rem;
-}
-
-.colImg{
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-    align-content: center;
-    justify-content: center;
+@media(max-width: 520px){
+    .navLinks{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 }
 
 
-/* Lessons */
+/*****************************************************************************************
+      LESSONS
+*****************************************************************************************/
 #lessonsRow{
     color: #BDD5EA;
 }
@@ -143,11 +265,36 @@ section {
 
 
 #lessonsCol2 img{
-    max-height: 600px;
     border-radius: 100%;
+    object-fit:scale-down;
+    max-height: 508px;
+    max-width: 90%; 
 }
 
-/* guitar4Kids */
+@media(max-width: 1200px){
+    .spanHeader{
+        display: block;
+        text-align: center;
+    }
+    #pipe{
+        display: none;
+    }
+}
+@media(max-width: 1000px){
+    #lessonsCol2{
+        min-width: 100%;
+    }
+
+    .g4kids img{
+        object-fit:scale-down;
+        max-height: 508px;
+        max-width: 90%; 
+    }
+}
+
+/*****************************************************************************************
+    GUITAR4KIDS
+*****************************************************************************************/
 #g4k span{
     font-weight: 600;
     font-size: 3rem;
@@ -161,7 +308,10 @@ section {
     color: #495867
 }
 
-/* Testimonials */
+/*****************************************************************************************
+    TESTIMONIALS
+*****************************************************************************************/
+
 .testimonials.col.fullWidth{
     font-size: 1.15rem;
 }
@@ -176,16 +326,66 @@ section {
 .col.colImg.testimonials.studentPix{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.testimonials.studentPix img{
-    max-width: 30vw;
-    max-height: 30vh;
-    margin: 2rem;
+div#studentPix img{
+    max-width: 17vw;
+    max-height: 17vw;
 }
 
-/* About */
+@media(max-width: 500px){
+    div#studentPix img{
+        max-width: 30vw;
+        max-height: 30vw;
+        margin: 1rem;
+    }   
+}
+
+@media(max-width: 380px){
+    .col.colImg.testimonials.studentPix {
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    div#studentPix img{
+        max-width: 50vw;
+        max-height: 50vw;
+        margin: 1rem;
+    }
+}
+
+
+/* Firefox adjustments */
+/* @media(max-width: 1360px){
+    .testimonials.studentPix img{
+        max-width: 30vw;
+        max-height: 30vh;
+        margin: 2rem;
+    }   
+}
+
+@media(min-width: 1000px) and (max-width:1030px){
+    .testimonials.studentPix img{
+        margin: 1.5rem;
+    }   
+}
+
+@media(max-width: 540px){
+    .col.colImg.testimonials.studentPix{
+        flex-direction: column;
+        align-content: center;
+    }
+    .testimonials.studentPix img{
+        max-width: 50vw;
+        max-height: 50vh;
+    }
+} */
+
+/*****************************************************************************************
+       ABOUT
+*****************************************************************************************/
 .about.rowContainer{
     justify-content: space-evenly;
 }
@@ -198,22 +398,38 @@ section {
     border-radius: 100%;
     object-fit:contain;
     max-height: 508px;
-    width:auto; 
+    max-width: 100%; 
 }
 
 
-/* Media */
+/*****************************************************************************************
+      MEDIA
+*****************************************************************************************/
 .media {
-    min-width: 49.8%;
     object-fit: contain;
     align-items: center;
     color: #BDD5EA;
 }
 
 iframe{
-    width: 56.0vh;
-    height: 31.5vh;
+    width: 60.0vw;
+    height: 33.75vw;
 }
+
+/* @media(max-width: 465px){
+    iframe{
+        width: 40vh;
+        height: 22.5vh;
+    }
+} */
+
+/* @media(max-width: 355px){
+    .colText {
+        font-size: 1.05rem;
+    }
+} */
+
+
 
 /* Gallery */
 
