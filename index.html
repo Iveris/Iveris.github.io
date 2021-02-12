@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styleSheet.css">
+    <script src="constants.js"></script>
 </head>
 
 <body>
@@ -50,16 +51,18 @@
                 <li><a href="#aboutLink">about</a></li>
                 <li><a href="#testimonialsLink">testimonials</a></li>
                 <li><a href="#mediaLink">media</a></li>
+                <li><a href="#contactLink">contact</a></li>
             </ul>
         </div>
     </nav>
     <nav class="skyBlueG">
-        <div class="row navLinks">
-            <div class="lessonsLink"><a href="#lessonsLink">lessons</a></div>
-            <div class="guitar4KidsLink"><a href="#g4kLink">guitar for kids</a></div>
-            <div class="aboutLink"><a href="#aboutLink">about</a></div>
-            <div class="aboutLink"><a href="#testimonialsLink">testimonials</a></div>
-            <div class="mediaLink"><a href="#mediaLink">media</a></div>
+        <div class="row navLinks" id="NAVLinks">
+            <div class=""><a href="#lessonsLink">lessons</a></div>
+            <div class=""><a href="#g4kLink">guitar for kids</a></div>
+            <div class=""><a href="#aboutLink">about</a></div>
+            <div class=""><a href="#testimonialsLink">testimonials</a></div>
+            <div class=""><a href="#mediaLink">media</a></div>
+            <div class=""><a href="#contactLink">contact</a></div>
         </div>
     </nav>
 
@@ -122,85 +125,35 @@
     </section>
 
     <section class="skyBlueG" id="testimonialsLink">
-        <div class="row rowContainer">
-            <div class="col colText testimonials fullWidth">
-                <h2>Student Testimonials</h2>
-                <p>
-                    “I began classical guitar study as an older adult, continuing with Warner in weekly lessons for the
-                    past two years. His precise approach and knowledge of the history and repertoire of the instrument
-                    have enabled me to progress way beyond my expectations. His demonstrations, exercises, and
-                    step-by-step assignments to explore moveable scales on the fretboard have helped me overcome
-                    technical challenges, further develop musical expression, and improve left- hand execution in
-                    performing studies and pieces. Throughout he has chosen appealing, motivating selections, and has
-                    been unfailingly kind and good humored.”
-                    -Joan
-                    <br><br><br>
-                    "Warner has an easygoing, engaging teaching style for students of all ages. As someone who didn't
-                    start lessons until later in life, I appreciate the patience with my busy work schedule and a chance
-                    to start totally fresh in the world of music!"
-                    - Maggie
-                    <br><br><br>
-                    "Unfailingly patient, kind, and open to a range of musical genres, we're grateful that Warner was
-                    our daughter's guitar teacher for the past two years. He responded to her uneven approach to
-                    practicing with supportive good humor, and he was a positive and stable presence during the
-                    disruptions of this past year."
-                    - Rebecca
-                    <br><br><br>
-                    "Our family had a wonderful experience with Dr. Iveris. My 7 year old son took both individual and
-                    group guitar lessons with him and was always excited to go to his lessons. Dr. Iveris was
-                    enthusiastic about parents staying for the lessons so they could help their children practice at
-                    home. He was organized, had goals and objectives for our son, and always ready to keep our young
-                    learner focused on the lesson. I believe Dr. Iveris was genuinely interested in seeing our child
-                    make progress in guitar, and I could see that my son was just so happy during his lessons!” -The
-                    Mathews Family
-                </p>
-                <div class="col colImg testimonials studentPix fullWidth contain" id="studentPix">
-                    <img src="img/image1.jpeg" alt="electric guitar student">
-                    <img src="img/IMG_8605.jpg" alt="student warming up">
-                    <img src="img/MomAndMe.jpg" alt="mom and me">
-                    <img src="img/image01.jpg" alt="excellent retiree">
-                </div>
-                <p>
-                    “Warner is an amazing musician and an excellent guitar teacher. My son Corwin started taking lessons
-                    from him when he just turned five. Warner was very patient with him and was able to keep him focused
-                    and interested. When the pandemic hit and we were forced to retreat to virtual lessons, not only was
-                    he able to transition to teaching virtually seamlessly with various technologies, but he was also
-                    innovative with how to keep students engaged remotely. Corwin looked forward to playing their
-                    “role-playing music game” every week and would practice his “battle songs” so he could win battles
-                    in the game. Corwin was so inspired by Warner, he decided that he wants to be a musician and
-                    conductor when he grows up.
-                    <br><br>
-                    Corwin’s progress in guitar triggered my interests in guitar. I also started taking lessons from
-                    Warner. I truly enjoyed our lessons. On the technical side, Warner was able to pin point my trouble
-                    spots and help me overcome those obstacles quickly. Many times, with just a little hint of how to
-                    position my hand or a certain finger practice during the lesson, I was able to do what I was not
-                    able to achieve with a week of practice. On the musical side, after we tackled the technical issues,
-                    Warner would discuss the phrases of the music, how to make the music sound interesting and engaging
-                    to the audience, and how to have fun with it. Through the discussion, I learned the theories and
-                    historical backgrounds behind a music piece.
-                    <br><br>
-                    Both Corwin and I felt very fortunate to have Warner as our teacher.”
-                    - Caisy
-                    <br><br><br>
-                    “Warner has a warm, supportive way of working with kids that honors them as individuals and helps
-                    them grow as musicians. He uses creative activities and fun games to engage his students, and makes
-                    learning music fun.”
-                    - Tucker
-                    <br><br><br>
-                    “Mr Warner is very good at incorporating games into guitar class. He helped me to get better at
-                    guitar.”
-                    - Lucia
-                    <br><br><br>
-                    “About five years ago I decided I wanted to try playing the guitar. I knew nothing about the
-                    instrument except it could make awesome sounds and thats what I wanted to do. The Hochstein school
-                    of music was nearby and thought it would it be convenient to get to after work. I had no idea who my
-                    instructor would be until about a week or so before I started. I was really nervous, as i am a bit
-                    older.  Right from the beginning Warner put me at ease. There were a few times I wanted to quit, but
-                    Warner talked me out it, which I am really thankful for. I wouldn't be playing today if not for
-                    those conversations.... so thank you for keeping me in the game!” - Russ
-                </p>
-            </div>
+
+        <div class="testimonialHeader">
+            <h2>Student Testimonials</h2>
         </div>
+
+        <div class="testimonialBack">
+            <img src="img/left.png" alt="Go Back" id="testBack">
+        </div>
+
+        <div class="testimonialText" id="testimonialText"></div>
+
+        <div class="testimonialForward">
+            <img src="img/right.png" alt="Go Forward" id="testForward">
+        </div>
+
+        <div class="testimonialPix">
+            <!-- <div id="pic1">
+                <img src="img/students/image1.jpeg" alt="electric guitar student">
+            </div>
+            <div id="pic2">
+                <img src="img/students/IMG_8605.jpg" alt="student warming up">
+            </div>
+            <div id="pic3">
+                <img src="img/students/MomAndMe.jpg" alt="mom and me">
+            </div>
+            <div id="pic4">
+                <img src="img/students/image01.jpg" alt="excellent retiree">
+            </div>
+        </div> -->
     </section>
 
     <section class="medBlueG" id="aboutLink">
@@ -268,7 +221,14 @@
         </div>
     </section>
 
-    <footer class="darkBlueG">&copy Warner Iveris, All Rights Reserved</footer>
+    <footer class="darkBlueG" id="contactLink">
+        <div>
+            <img src="img/WIverisEmailOp.svg" alt="contact">
+            <img src="img/WIverisPhoneOp.svg" alt="contact">
+        </div>
+        <p>&copy Warner Iveris, All Rights Reserved</p>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 

@@ -28,6 +28,14 @@ section {
     min-height: 568px;
 }
 
+h2{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.1ch;
+    color: #c9e6ff;
+}
+
 .row{
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,6 +44,13 @@ section {
 .rowReverse{
     flex-direction: row;
     flex-wrap: wrap-reverse;
+}
+
+.rowContainer{
+    display:flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 2rem;
 }
 
 .textLeft {
@@ -58,19 +73,14 @@ section {
 .col.fullWidth{
     min-width: 100%;
 }
-
-.rowContainer{
-    display:flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    padding: 2rem;
-}
 .colText {
     flex: 2;
     width: 45%;
     text-align: justify;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    letter-spacing: 0.07ch;
 }
 
 .colImg{
@@ -100,6 +110,7 @@ section {
         padding: 1rem;
     }
 }
+
 
 /*****************************************************************************************
       SPLASH
@@ -224,8 +235,12 @@ section {
 
 .navLinks {
     display: flex;
-    justify-content: space-between;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
     align-content: flex-end;
+}
+
+div.navLinks div{
     padding-left: 4rem; 
     padding-right: 4rem;
 }
@@ -239,10 +254,10 @@ section {
     color: #ECEFA9;
 }
 
-@media(max-width: 520px){
+@media(max-width: 1375px){
     .navLinks{
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
     }
 }
 
@@ -260,7 +275,9 @@ section {
 }
 
 #lessonsCol1 a:hover{
+    transition: ease-in-out 300ms;
     color: whitesmoke;
+    font-size: 1.3rem;
 }
 
 
@@ -297,7 +314,8 @@ section {
 *****************************************************************************************/
 #g4k span{
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    letter-spacing: 0.3ch;
 }
 #g4k{
     text-align: center;
@@ -311,77 +329,83 @@ section {
 /*****************************************************************************************
     TESTIMONIALS
 *****************************************************************************************/
-
-.testimonials.col.fullWidth{
-    font-size: 1.15rem;
+#testimonialsLink
+{
+    display: grid;
+    padding: 0px;
+    max-width: 100vw;
+    grid-template-rows: 15vh auto auto;
+    grid-template-columns: 0.5fr minmax(320px, 80vw) 0.5fr;
+    grid-template-areas: ". testimonialHeader ." 
+    "testimonialBack testimonialText testimonialForward" 
+    "testimonialPix testimonialPix testimonialPix";
 }
-.testimonials.col.fullWidth h2{
+
+.testimonialHeader
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-area: testimonialHeader;
+}
+
+.testimonialHeader h2{
     text-align: center;
     color: #495867;
     font-weight: 400;
     font-size: 3rem;
-    padding-bottom: 2rem;
+    padding: 0px;
 }
 
-.col.colImg.testimonials.studentPix{
+.testimonialBack
+{
+    grid-area: testimonialBack;
+}
+
+.testimonialBack img
+{
+    transform: scale(15%);
+}
+
+.testimonialText
+{
+    grid-area: testimonialText;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 1.15em;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.testimonialForward
+{
+    grid-area: testimonialForward;
+    justify-self: flex-end;
+}
+.testimonialForward img
+{
+    transform: scale(15%);
+}
+
+.testimonialPix
+{
+    grid-area: testimonialPix;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items:center;
 }
 
-div#studentPix img{
+.testimonialPix img{
+    margin: 0px;
     max-width: 17vw;
     max-height: 17vw;
 }
 
-@media(max-width: 500px){
-    div#studentPix img{
-        max-width: 30vw;
-        max-height: 30vw;
-        margin: 1rem;
-    }   
-}
-
-@media(max-width: 380px){
-    .col.colImg.testimonials.studentPix {
-        display:flex;
-        flex-direction: column;
-        justify-items: center;
-    }
-
-    div#studentPix img{
-        max-width: 50vw;
-        max-height: 50vw;
-        margin: 1rem;
-    }
-}
 
 
-/* Firefox adjustments */
-/* @media(max-width: 1360px){
-    .testimonials.studentPix img{
-        max-width: 30vw;
-        max-height: 30vh;
-        margin: 2rem;
-    }   
-}
-
-@media(min-width: 1000px) and (max-width:1030px){
-    .testimonials.studentPix img{
-        margin: 1.5rem;
-    }   
-}
-
-@media(max-width: 540px){
-    .col.colImg.testimonials.studentPix{
-        flex-direction: column;
-        align-content: center;
-    }
-    .testimonials.studentPix img{
-        max-width: 50vw;
-        max-height: 50vh;
-    }
-} */
 
 /*****************************************************************************************
        ABOUT
@@ -416,24 +440,20 @@ iframe{
     height: 33.75vw;
 }
 
-/* @media(max-width: 465px){
-    iframe{
-        width: 40vh;
-        height: 22.5vh;
-    }
-} */
-
-/* @media(max-width: 355px){
-    .colText {
-        font-size: 1.05rem;
-    }
-} */
-
-
 
 /* Gallery */
 
 /* Press Kit */
+
+/* Contact */
+#contactLink{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+}
 
 footer{
     text-align: center;
