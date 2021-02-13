@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="310"
+   height="24"
+   viewBox="0 0 82.020831 6.3500002"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   sodipodi:docname="WIverisEmail.svg">
+  <defs
+     id="defs2">
+    <rect
+       x="0.37861407"
+       y="2.1454797"
+       width="83.926125"
+       height="17.794861"
+       id="rect835" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.096462"
+     inkscape:cx="145.31197"
+     inkscape:cy="79.99621"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1252"
+     inkscape:window-height="847"
+     inkscape:window-x="37"
+     inkscape:window-y="26"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.60214843,-3.1465727)">
+    <text
+       xml:space="preserve"
+       id="text833"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.34999999999999964px;line-height:1.25;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';letter-spacing:0.26458300000000001px;white-space:pre;shape-inside:url(#rect835);fill:#bdd5ea;fill-opacity:1;"
+       transform="matrix(0.99790021,0,0,1.017387,0.00126438,-0.05470946)"><tspan
+         x="0.37890625"
+         y="7.9834866"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#bdd5ea;fill-opacity:1">WarnerIveris@gmail.com</tspan></tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="29.995579mm"
+   height="4.6756825mm"
+   viewBox="0 0 29.995579 4.6756825"
+   version="1.1"
+   id="svg892"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   sodipodi:docname="WIverisPhoneOp.svg">
+  <defs
+     id="defs886">
+    <rect
+       x="24.925423"
+       y="45.894428"
+       width="32.442612"
+       height="7.1215491"
+       id="rect1457" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.66874495"
+     inkscape:cx="261.18152"
+     inkscape:cy="292.33892"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1252"
+     inkscape:window-height="847"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata889">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.181063,-46.472672)">
+    <text
+       xml:space="preserve"
+       id="text1455"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.58610999999999969px;line-height:1.25;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Light';white-space:pre;shape-inside:url(#rect1457);fill:#bdd5ea;fill-opacity:1;"><tspan
+         x="24.925781"
+         y="50.111554"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.58611px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Light';fill:#bdd5ea;fill-opacity:1">(619) 800-0238</tspan></tspan></text>
+  </g>
+</svg>
