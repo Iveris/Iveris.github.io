@@ -34,7 +34,7 @@ for (let i = 0; i < guitar4kidsHeader.length; i++) {
 ////////// TESTIMONIALS //////////
 
 let testimonials = document.querySelector('#testimonialText');
-testimonials.scrollIntoView(true);
+// testimonials.scrollIntoView(true);
 let shuffledTestimonials = [...testimonialTxt];
 
 // Fischer-Yates Randomize Algorithm
